@@ -1,0 +1,117 @@
+.booking-page {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.page-title h1 {
+    font-size: 28px;
+    color: #0d6efd;
+}
+
+.page-title p {
+    margin: 0;
+    color: #666666;
+}
+
+.booking-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.booking-box h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.booking-form {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.booking-form > div {
+    flex: 1;
+}
+
+.booking-form label,
+.note-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.note-box {
+    margin-top: 15px;
+}
+
+
+.total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 15px;
+    background: #f2f2f2;
+    border: 1px solid #dddddd;
+}
+
+.total-box strong {
+    display: block;
+    color: red;
+    font-size: 24px;
+}
+
+.table {
+    background: white;
+}
+
+.table th {
+    background: #f2f2f2;
+}
+
+.history-table td,
+.history-table th {
+    min-width: 110px;
+}
+
+.history-table td:nth-child(2),
+.history-table td:nth-child(6) {
+    min-width: 180px;
+}
+
+.empty-text {
+    padding: 20px;
+    text-align: center;
+    color: #666666;
+    background: #f7f7f7;
+}
+
+@media (max-width: 700px) {
+    .page-title,
+    .booking-form,
+    .total-box {
+        display: block;
+    }
+
+    .page-title .btn,
+    .total-box .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .booking-form > div {
+        margin-bottom: 10px;
+    }
+}
