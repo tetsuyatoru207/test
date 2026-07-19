@@ -11,7 +11,6 @@ function getBedName(bedType) {
     if (bedType == 'doubleBed') return 'Giường đôi';
     if (bedType == 'queenBed') return 'Giường Queen';
     if (bedType == 'kingBed') return 'Giường King';
-
     return bedType;
 }
 
@@ -66,7 +65,6 @@ function renderRooms(rooms) {
 
                         <label class="room-check-box">
                             <input type="checkbox" name="id" value="${room.ROOM_ID}">
-                            Chọn
                         </label>
                     </div>
 

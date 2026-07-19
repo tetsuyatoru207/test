@@ -8,13 +8,14 @@
 
 .room-image-box {
     position: relative;
+    height: 250px;
 }
 
 .client-room-image {
-    display: block;
     width: 100%;
-    height: 190px;
-    object-fit: cover;
+    height: 100%;
+    padding: 8px;
+    object-fit: contain;
 }
 
 .no-image {

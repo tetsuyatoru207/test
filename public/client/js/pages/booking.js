@@ -143,20 +143,20 @@ function calculateTotal() {
 
     const date1 = new Date(checkin.value);
     const date2 = new Date(checkout.value);
-    const d = (date2 - date1) / (1000*60*60*24);
+    const n = (date2 - date1) / (1000*60*60*24);
 
-    if (d <= 0) {
+    if (n <= 0) {
         totalPrice.innerText = '0 đ';
         return;
     }
 
-    let pricePerDay = 0;
+    let pricePerNight = 0;
 
     currentCart.forEach(function(room) {
-        pricePerDay += Number(room.PRICE_PER_NIGHT);
+        pricePerNight += Number(room.PRICE_PER_NIGHT);
     });
 
-    const total = pricePerDay * d;
+    const total = pricePerNight * n;
     totalPrice.innerText = total.toLocaleString('vi-VN') + ' đ';
 }
 
